@@ -4,7 +4,9 @@ name: CI
 on: 
   push:
   workflow_dispatch:
-
+  watch:
+    types: [started]
+    
 env:
   src_git: https://github.com/hanwckf/rt-n56u.git
   repo_name: rt-n56u
